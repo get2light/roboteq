@@ -13,7 +13,7 @@ setconfig(_AMOD, 2, 1) ' Analog input 2 absolute mode
 
 ' Undervoltage/overvoltage limits (p214)
 setconfig(_OVL, 700)
-setconfig(_UVL, 300)
+setconfig(_UVL, 100)
 
 ' Encoder, speed config (p208, p221)
 setconfig(_EMOD, 1, 50)
