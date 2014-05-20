@@ -56,7 +56,7 @@ setconfig(_MAC, 2, 20000)
 setconfig(_MDEC, 2, 20000)
 
 ' Closed-loop control (p216-218)
-setconfig(_MMOD, 1, 1)
+setconfig(_MMOD, 2, 1)
 setconfig(_KP, 2, 20)
 setconfig(_KI, 2, 40)
 setconfig(_KD, 2, 10)
