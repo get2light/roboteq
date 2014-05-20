@@ -38,6 +38,31 @@ setconfig(_KD, 1, 10)
 setconfig(_ICAP, 1, 100)
 setconfig(_CLERD, 1, 0)
 
+'-----------------------------------------------------------------------------------------------------------
+
+' Encoder, speed config (p208, p221)
+setconfig(_EMOD, 2, 50)
+setconfig(_EPPR, 2, 1024)
+setconfig(_MXRPM, 2, 3500)
+
+' Current limit (p216)
+setconfig(_ALIM, 2, 1500)
+setconfig(_ATGA, 2, 2000)
+setconfig(_ATGD, 2, 50)
+setconfig(_ATRIG, 2, 0)
+
+' Max acceleration/deceleration (p219)
+setconfig(_MAC, 2, 20000)
+setconfig(_MDEC, 2, 20000)
+
+' Closed-loop control (p216-218)
+setconfig(_MMOD, 1, 1)
+setconfig(_KP, 2, 20)
+setconfig(_KI, 2, 40)
+setconfig(_KD, 2, 10)
+setconfig(_ICAP, 2, 100)
+setconfig(_CLERD, 2, 0)
+
 top:
 	for ch = 1 andwhile ch <= MAX_CHANNELS evaluate ch++
 		if getvalue(_BOOL, ch) = 1 then
